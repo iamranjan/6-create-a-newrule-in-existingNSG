@@ -6,7 +6,7 @@ resource "azurerm_network_security_group" "NSG_on_vnet" {
   resource_group_name = azurerm_resource_group.myrg.name
 
   security_rule {
-    name                       = "AllowInbound80"
+    name                       = "AllowInbound80-to-10.2.0.1"
     priority                   = 120
     direction                  = "Inbound"
     access                     = "Allow"
