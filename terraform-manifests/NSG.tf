@@ -18,7 +18,7 @@ resource "azurerm_network_security_group" "NSG_on_vnet" {
   }
 
   security_rule {
-    name                       = "AllowOutbound80to10-0-0-8"
+    name                       = "AllowOutbound80to10--0-0-8"
     priority                   = 220
     direction                  = "Outbound"
     access                     = "Allow"
